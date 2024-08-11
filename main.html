@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  
+<body>
+  <center><h1 class="colorful">U.G.L.Y. Affirmations</h1>
+    <p style="text-decoration:underline"> Click the text boxes below for new affirmations</p></center>
+  
+  <div class="grid text-box box2">
+    <figure>
+    <img  src="https://static.wixstatic.com/media/a9d36a_530815c7b4f64b78a850eda1acfaa668~mv2.jpg" alt="Two woman laughing">
+    </figure>
+    <figure id="youtransform">
+      <figcaption><h4 class="colorful">U</h4></figcaption>
+      <p class="text-box" id="youclickableText"><b class="colorful">U</b> have to love yourself before anyone one else can and when no one else will.</p>
+    </figure>
+</div>
+  
+  <div class="grid text-box box1">
+    
+    <figure id="gottatransform">
+      <figcaption><h4 class="colorful">Gotta</h4></figcaption>
+      <p class="text-box" id="gottaclickableText">You <b class="colorful">gotta</b> keep going so find a reason why.</p>
+    </figure>
+    <figure>
+    
+  <img  src="https://static.wixstatic.com/media/a9d36a_8083f70bfa2e40e6a027269efa261b94~mv2.png" alt="Undefined abstract art">
+    </figure>
+</div>
+  
+   <div class="grid text-box box3">
+     <figure>
+  <img src="https://static.wixstatic.com/media/a9d36a_91a95a958e4f4ee7b22c32cc71a739ae~mv2.jpg" alt="A warm happy family photo">
+     </figure>
+     <figure id="lovetransform">
+        <figcaption><h4 class="colorful">Love</h4></figcaption>
+       <p class="text-box" id="loveclickable">Remind yourself that you are <b class="colorful">loved</b>.</p>
+     </figure>
+</div>
+  
+   <div class="grid text-box box4">
+     <figure id="transformableText4">
+       <figcaption><h4 class="colorful">Yourself</h4></figcaption>
+       <p class="text-box" id="clickableText4">Remind <b class="colorful"> yourself </b> that you are undefined. Others opinions on who you are does not matter. You are the only one who can define and describe you.</p>
+     </figure>
+     <figure>
+       <img src="https://static.wixstatic.com/media/a9d36a_c56f54ff89304503acefb663980bedd3~mv2.jpg" alt="Man and woman pointing at each other showing you should love yourself">
+
+     </figure>
+     
+</div>
+ 
+  </body>
+  
+  <style>
+    .grid{
+   display: grid;
+   grid-template-columns: auto auto;
+}
+    
+    .text-box > figure>p {
+    border-radius: 5px;
+      overflow: none;
+    max-height:100px;
+    width: 600px;
+    margin: 10px;
+    font-size: 19px;
+    color: black;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .box1>figure>p{
+    border: 1px #D1FAFD solid;
+    background-color: #D1FAFD;
+    }
+    
+    .box2 >figure>p{
+    border: 1px #ECD1FD solid;
+    background-color: #ECD1FD;
+    }
+    
+    .box3 >figure>p{
+    border: 1px #D1FDD4 solid;
+    background-color: #D1FDD4;
+    }
+    
+    .box4 >figure>p{
+    border: 1px #F8FDD1 solid;
+    background-color: #F8FDD1;
+    }
+    
+    .text-box {
+   	padding: 10px;
+    }
+    
+     .colorful {
+     font-size:25px;
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+	
+    }
+    
+    h4.colorful {
+      font-size: 40px;
+      margin: 0 10px 10px 10px;
+    margin-bottom:-10px;
+    }
+    
+    img {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: none;
+    background-size: cover;
+    margin: 1px;
+    }
+    
+    body {
+    margin: auto;
+    max-width: 1200px;
+	overflow: none;
+    }
+    
+    *{
+    padding:0;
+    margin: 0;
+    }
+
+    p.text-box{
+    border: 1px solid inherit;
+    }
+    
+    p.text-box:hover{
+    border: 1px solid black;
+    cursor:pointer;
+    }
+  </style>
+  
+  <script>
+    /*The transformation code*/
+    
+    const phrases = [
+    "U are capable of amazing things.",
+    "U have the power to create change.",
+    "U are deserving of all good things.",
+    "U can achieve anything u set your mind to.",
+    "U are enough just as u are.",
+    "U radiate positivity and light.",
+    "U are stronger than u think.",
+    "U have unique talents that the world needs.",
+    "U are worthy of love and respect.",
+    "U are capable of overcoming any challenge.",
+    "U attract success and happiness into your life.",
+    "U are a valuable and important person.",
+    "U are making a difference in the world.",
+    "U deserve to be happy and fulfilled.",
+    "U have the strength to face any difficulty.",
+    "U are full of potential and possibilities.",
+    "U are in control of your own destiny.",
+    "U are making progress every day.",
+    "U are a beacon of hope and inspiration.",
+    "U are constantly growing and evolving.",
+    "U have the ability to turn dreams into reality.",
+    "U are surrounded by love and support.",
+    "U are a powerful force for good.",
+    "U are deserving of all the success that comes your way.",
+    "U are capable of great achievements.",
+    "U are a beautiful and unique individual.",
+    "U have the power to shape your own future.",
+    "U are full of creativity and imagination.",
+    "U are deserving of all the joy life has to offer.",
+    "U are a source of strength and resilience.",
+    "U have the courage to pursue your passions.",
+    "U are worthy of all your dreams and desires.",
+    "U have the ability to make your dreams come true.",
+    "U are a wonderful and special person.",
+    "U have the power to create your own happiness.",
+    "U are loved and appreciated for who u are.",
+    "U are capable of achieving greatness.",
+    "U are a positive influence on those around u.",
+    "U have the strength to achieve your goals.",
+    "U are an inspiration to others.",
+    "U are full of hope and potential.",
+    "U have the ability to make a positive impact.",
+    "U are deserving of all the success in the world.",
+    "U are a unique and valuable person.",
+    "U have the power to overcome any obstacle.",
+    "U are making a meaningful contribution.",
+    "U are full of love and compassion.",
+    "U are capable of creating wonderful things.",
+    "U are a true source of inspiration.",
+    "U have the strength to achieve anything u desire.",
+    "U are deserving of all the good things in life.",
+    "U have the power to make a difference.",
+    "U are a bright light in the world.",
+    "U are a masterpiece in progress.",
+    "U have the power to transform your life.",
+    "U are an incredible and unique individual.",
+    "U are full of grace and beauty.",
+    "U have the ability to create your own path.",
+    "U are deserving of all your heart's desires.",
+    "U are a true reflection of strength and beauty.",
+    "U have the power to manifest your dreams.",
+    "U are capable of achieving extraordinary things.",
+    "U are a shining example of perseverance.",
+    "U are a wonderful person with much to offer.",
+    "U are deserving of all the love and happiness.",
+    "U have the power to shape your reality.",
+    "U are a source of positivity and light.",
+    "U are full of endless possibilities.",
+    "U are capable of achieving all your goals.",
+    "U are a beacon of hope and positivity.",
+    "U are worthy of all the blessings in your life.",
+    "U have the power to create a fulfilling life.",
+    "U are a true gem in this world.",
+    "U are deserving of all your dreams and goals.",
+    "U are a unique and precious individual.",
+    "U have the strength to overcome any challenge.",
+    "U are a force for good in the world.",
+    "U are capable of creating your own success.",
+    "U are full of talent and potential.",
+    "U are deserving of all the happiness and success.",
+    "U are a shining star in the universe.",
+    "U have the power to achieve greatness.",
+    "U are a true inspiration to those around u.",
+    "U are full of courage and strength.",
+    "U are deserving of all the wonderful things in life.",
+    "U have the ability to make your dreams come true.",
+    "U are a beautiful and valuable person.",
+    "U are capable of making a significant impact.",
+    "U are a source of joy and inspiration.",
+    "U are deserving of all the best life has to offer.",
+    "U have the power to live your best life.",
+    "U are a unique and incredible individual.",
+    "U are full of love and positivity.",
+    "U have the strength to achieve your dreams.",
+    "U are a shining example of hope and determination.",
+    "U are deserving of all the good things that come your way.",
+    "U are capable of creating a life of fulfillment and joy.",
+    "U are a true treasure in this world.",
+    "U have the power to turn challenges into opportunities.",
+    "U are full of potential and promise.",
+    "U are deserving of all the success and happiness life has to offer.",
+    "U are a bright and shining star in the universe.",
+    "U have the power to create your own path to success.",
+    "U are a true beacon of light and hope.",
+    "U are capable of achieving anything u set your mind to.",
+    "U are deserving of all the love and success in the world.",
+    "U have the strength to achieve your highest potential.",
+    "U are a wonderful and extraordinary person.",
+    "U are full of grace, strength, and beauty."
+];
+
+    const phrases2 = [
+  "I gotta believe in my abilities to achieve greatness.",
+  "I gotta stay focused on my goals and dreams.",
+  "I gotta embrace every challenge as a chance to grow.",
+  "I gotta trust the process and be patient with myself.",
+  "I gotta keep moving forward, no matter the obstacles.",
+  "I gotta celebrate my progress, no matter how small.",
+  "I gotta stay positive and keep a hopeful mindset.",
+  "I gotta be kind to myself and acknowledge my efforts.",
+  "I gotta surround myself with supportive and positive people.",
+  "I gotta remember that every setback is a setup for a comeback.",
+  "I gotta take time to appreciate the journey and not just the destination.",
+  "I gotta remain resilient and persistent in pursuing my goals.",
+  "I gotta stay true to myself and honor my values.",
+  "I gotta maintain a healthy balance between work and relaxation.",
+  "I gotta keep learning and growing every day.",
+  "I gotta approach each day with enthusiasm and a can-do attitude.",
+  "I gotta find joy in the little things and express gratitude.",
+  "I gotta forgive myself for past mistakes and focus on the present.",
+  "I gotta trust that everything is unfolding as it should.",
+  "I gotta be open to new opportunities and experiences.",
+  "I gotta prioritize my well-being and self-care.",
+  "I gotta remain optimistic and believe in the best possible outcomes.",
+  "I gotta challenge myself to step out of my comfort zone.",
+  "I gotta embrace my uniqueness and value my individuality.",
+  "I gotta set clear intentions and work towards them with determination.",
+  "I gotta take responsibility for my actions and decisions.",
+  "I gotta stay motivated and keep pushing forward.",
+  "I gotta be grateful for the lessons learned through difficulties.",
+  "I gotta nurture my passions and pursue what excites me.",
+  "I gotta practice mindfulness and stay present in the moment.",
+  "I gotta celebrate my achievements and recognize my strengths.",
+  "I gotta stay curious and open-minded about the world around me.",
+  "I gotta be proactive in creating the life I desire.",
+  "I gotta embrace change and adapt with flexibility.",
+  "I gotta surround myself with positive influences and inspirations.",
+  "I gotta trust in my inner wisdom and intuition.",
+  "I gotta remain patient and persistent in reaching my goals.",
+  "I gotta take care of my physical health and well-being.",
+  "I gotta keep my mind focused on solutions rather than problems.",
+  "I gotta appreciate the beauty in each day and each moment.",
+  "I gotta seek out and nurture meaningful connections with others.",
+  "I gotta challenge negative thoughts and replace them with positivity.",
+  "I gotta be resilient in the face of adversity and stay strong.",
+  "I gotta take pride in my accomplishments and recognize my worth.",
+  "I gotta approach life with an open heart and an open mind.",
+  "I gotta stay committed to my personal growth and development.",
+  "I gotta trust that I have the strength to overcome any challenge.",
+  "I gotta keep a positive attitude, even in difficult situations.",
+  "I gotta be gentle with myself and practice self-compassion.",
+  "I gotta recognize and celebrate my unique talents and abilities.",
+  "I gotta keep my goals in sight and remain determined to achieve them.",
+  "I gotta focus on what I can control and let go of what I cannot.",
+  "I gotta seek out joy and laughter in everyday life.",
+  "I gotta stay true to my passions and pursue them with dedication.",
+  "I gotta believe in the power of my dreams and work towards them.",
+  "I gotta embrace my journey and trust that I am on the right path.",
+  "I gotta find balance and harmony in all areas of my life.",
+  "I gotta take time for reflection and self-discovery.",
+  "I gotta stay enthusiastic and maintain a positive outlook.",
+  "I gotta take action towards my dreams with confidence and courage.",
+  "I gotta recognize and celebrate the progress I've made.",
+  "I gotta remain grounded and centered through life’s ups and downs.",
+  "I gotta focus on my strengths and use them to my advantage.",
+  "I gotta stay committed to my goals and never give up.",
+  "I gotta find meaning and purpose in everything I do.",
+  "I gotta seek out opportunities for growth and learning.",
+  "I gotta surround myself with love and positivity.",
+  "I gotta take time to appreciate and enjoy the present moment.",
+  "I gotta stay motivated and driven by my passions.",
+  "I gotta believe in my capacity to create positive change.",
+  "I gotta be patient with myself as I work towards my goals.",
+  "I gotta approach each day with a sense of curiosity and wonder.",
+  "I gotta acknowledge my efforts and give myself credit.",
+  "I gotta stay focused on my vision and work towards it steadily.",
+  "I gotta embrace challenges as opportunities for growth.",
+  "I gotta find strength in my journey and keep moving forward.",
+  "I gotta appreciate the support and love I receive from others.",
+  "I gotta trust in my abilities and believe in my potential.",
+  "I gotta remain hopeful and optimistic about the future.",
+  "I gotta take pride in my unique path and embrace my individuality.",
+  "I gotta keep striving towards my goals with dedication and passion.",
+  "I gotta find balance in my life and nurture my well-being.",
+  "I gotta stay resilient and persistent in the face of challenges.",
+  "I gotta practice self-love and acknowledge my worth.",
+  "I gotta approach each day with a positive and determined mindset.",
+  "I gotta recognize and celebrate my accomplishments along the way.",
+  "I gotta stay true to my values and honor my authentic self.",
+  "I gotta embrace the journey and trust that I am on the right path.",
+  "I gotta seek out opportunities for joy and fulfillment.",
+  "I gotta remain grounded and focused on my goals.",
+  "I gotta believe in my potential and keep pushing forward.",
+  "I gotta practice gratitude and appreciate the blessings in my life.",
+  "I gotta take time to recharge and rejuvenate my spirit.",
+  "I gotta stay committed to my dreams and pursue them with passion.",
+  "I gotta be open to growth and new experiences.",
+  "I gotta focus on the positives and let go of negativity.",
+  "I gotta celebrate my successes and learn from my experiences.",
+  "I gotta stay optimistic and trust in the unfolding of my journey.",
+  "I gotta embrace my inner strength and resilience.",
+  "I gotta find inspiration and motivation in everyday moments.",
+  "I gotta keep a positive mindset and believe in my capabilities.",
+  "I gotta take action towards my dreams and trust the process.",
+  "I gotta appreciate the progress I've made and continue to grow.",
+  "I gotta remain focused on my goals and stay determined."
+];
+
+    
+    const phrases3 = [
+    "I am surrounded by love and everything is fine.",
+    "Love flows to me effortlessly and abundantly.",
+    "I am deserving of all the love that comes my way.",
+    "I embrace love in every form it takes.",
+    "My heart is open to give and receive love.",
+    "I am a magnet for love and positive energy.",
+    "Love is my natural state of being.",
+    "I attract loving and supportive relationships.",
+    "I am worthy of unconditional love.",
+    "I radiate love and joy wherever I go.",
+    "Love and kindness are my guiding principles.",
+    "I am grateful for the love in my life.",
+    "I am filled with love and compassion for myself and others.",
+    "Love empowers me to be my best self.",
+    "I choose love over fear in every situation.",
+    "My life is enriched with love and happiness.",
+    "I give and receive love freely and openly.",
+    "I am surrounded by people who love and appreciate me.",
+    "Every day, I grow stronger in love and self-acceptance.",
+    "I am a beacon of love and light.",
+    "Love is the foundation of all my relationships.",
+    "I celebrate the love that exists within me.",
+    "My heart is open to new and beautiful experiences of love.",
+    "I attract love that is genuine and true.",
+    "I am grateful for the love that fills my life.",
+    "Love is the essence of who I am.",
+    "I am a vessel of love and positivity.",
+    "My love for myself grows stronger each day.",
+    "I am deserving of all the love life has to offer.",
+    "I am surrounded by love, peace, and harmony.",
+    "Love is the energy that guides my actions.",
+    "I am open to receiving love in unexpected ways.",
+    "Every moment is an opportunity to experience and give love.",
+    "I release all negativity and embrace love and light.",
+    "My relationships are built on a foundation of love and trust.",
+    "I am grateful for the love and support from those around me.",
+    "Love flows easily and effortlessly into my life.",
+    "I am worthy of love and all its blessings.",
+    "I attract loving and meaningful connections.",
+    "Love fills my life with joy and fulfillment.",
+    "I am a reflection of love and kindness.",
+    "My heart is a sanctuary of love and peace.",
+    "I am surrounded by love and abundance.",
+    "I am a loving and caring person.",
+    "Love surrounds me, uplifts me, and guides me.",
+    "I release any doubts and embrace love and positivity.",
+    "My life is a celebration of love and happiness.",
+    "I am grateful for the loving relationships I have.",
+    "Love is the driving force behind my actions and decisions.",
+    "I am open to receiving love from the universe.",
+    "I am worthy of a love that is kind and nurturing.",
+    "Love flows through me and radiates to others.",
+    "I attract love and positivity with ease.",
+    "My heart is a source of boundless love and joy.",
+    "I am surrounded by people who uplift and love me.",
+    "Love enriches every aspect of my life.",
+    "I am deserving of love, joy, and abundance.",
+    "I am open to giving and receiving love unconditionally.",
+    "Love and compassion guide my thoughts and actions.",
+    "I am grateful for the love and support I receive daily.",
+    "Every day, I attract more love into my life.",
+    "I am a beacon of love and light for others.",
+    "Love is the most powerful force in my life.",
+    "I am surrounded by loving and supportive individuals.",
+    "I am open to the endless possibilities of love.",
+    "I embrace love as my guiding principle.",
+    "I am worthy of a love that nurtures and supports me.",
+    "I am grateful for the abundance of love in my life.",
+    "Love flows effortlessly into my heart and soul.",
+    "I attract and nurture loving and fulfilling relationships.",
+    "I am a loving and compassionate person.",
+    "My heart is a magnet for love and positive energy.",
+    "I am surrounded by love, peace, and harmony.",
+    "Love guides me towards my highest good.",
+    "I am deserving of love and all its wonderful gifts.",
+    "I am open to experiencing love in new and exciting ways.",
+    "I radiate love and positivity to everyone around me.",
+    "I am grateful for the love that enriches my life.",
+    "Love is a constant presence in my life.",
+    "I attract loving and supportive people into my life.",
+    "I am a vessel for love, joy, and happiness.",
+    "I am surrounded by love and positive energy.",
+    "I am worthy of receiving and giving love freely.",
+    "Love flows to me from all directions.",
+    "I am grateful for the love that surrounds me.",
+    "I embrace love as a central part of my life.",
+    "I am open to the endless possibilities of love and happiness.",
+    "Love is my natural state and I cherish it.",
+    "I am deserving of all the love and joy the universe offers.",
+    "I attract love that is genuine, kind, and nurturing.",
+    "I am surrounded by a loving and supportive community.",
+    "I am a beacon of love and compassion for others.",
+    "Love is the essence of who I am and who I strive to be.",
+    "I am grateful for the love that fills my heart and soul.",
+    "Love and positivity flow effortlessly into my life.",
+    "I am open to receiving love from all sources.",
+    "My life is filled with love, joy, and abundance.",
+    "I am worthy of experiencing and sharing love.",
+    "Love guides my actions and decisions every day.",
+    "I am a magnet for loving and supportive relationships.",
+    "I radiate love and attract it in return.",
+    "I am grateful for the love and happiness in my life.",
+    "Love surrounds me and uplifts me every day.",
+    "I am open to new experiences of love and joy.",
+    "Love is the driving force behind all my endeavors.",
+    "I am deserving of love and all its blessings.",
+    "I am surrounded by a network of love and support.",
+    "I attract and nurture loving and fulfilling connections.",
+    "I am a reflection of love, kindness, and positivity.",
+    "My heart is open to giving and receiving love freely.",
+    "Love fills my life with purpose and joy.",
+    "I am grateful for the love that I give and receive.",
+    "Love flows to me in abundance and grace.",
+    "I am surrounded by people who appreciate and love me.",
+    "I am a loving person and attract love effortlessly.",
+    "My life is a testament to the power of love and positivity."
+];
+
+    
+    const phrases4 = [
+    "Believe in yourself and all that you are.",
+    "You are capable of achieving great things yourself.",
+    "Trust yourself to make the right decisions.",
+    "You are worthy of all the love you give yourself.",
+    "Embrace yourself and all your unique qualities.",
+    "Allow yourself to be proud of your accomplishments.",
+    "Treat yourself with the kindness you deserve.",
+    "You have the power to create your own happiness yourself.",
+    "Give yourself permission to be happy.",
+    "You are enough just as you are yourself.",
+    "Forgive yourself for past mistakes.",
+    "Trust yourself to navigate through life's challenges.",
+    "Honor yourself by setting healthy boundaries.",
+    "Celebrate yourself and your successes.",
+    "Be gentle with yourself during difficult times.",
+    "Remind yourself of your strengths daily.",
+    "You are deserving of all the good things life has to offer yourself.",
+    "Encourage yourself to follow your dreams.",
+    "Allow yourself to shine brightly.",
+    "Value yourself and your contributions.",
+    "Be proud of yourself for every little victory.",
+    "Give yourself credit for how far you've come.",
+    "Believe in the power you hold within yourself.",
+    "Be true to yourself and your values.",
+    "Trust yourself to handle whatever comes your way.",
+    "Nurture yourself with love and care.",
+    "Affirm yourself and your capabilities every day.",
+    "You are a masterpiece and a work in progress yourself.",
+    "Treat yourself with the respect you deserve.",
+    "Remind yourself that you are enough.",
+    "Be compassionate with yourself through growth.",
+    "Encourage yourself to keep moving forward.",
+    "You are your greatest supporter; believe in yourself.",
+    "Allow yourself to rest and recharge.",
+    "Cherish yourself and your journey.",
+    "Honor yourself by pursuing your passions.",
+    "Give yourself grace and understanding.",
+    "You are a unique and valuable individual yourself.",
+    "Recognize the beauty within yourself.",
+    "Affirm yourself for your efforts and progress.",
+    "You have the strength to overcome anything yourself.",
+    "Celebrate your individuality and what makes you special.",
+    "Show yourself the same love you give to others.",
+    "Believe in your ability to make a difference yourself.",
+    "Trust in your journey and the path you're on.",
+    "You are capable of achieving your goals yourself.",
+    "Support yourself with positive self-talk.",
+    "Embrace your flaws and see them as part of your greatness.",
+    "Be proud of the person you are becoming yourself.",
+    "Encourage yourself to keep growing and evolving.",
+    "Affirm your worth and potential every day.",
+    "You are deserving of all the joy you seek yourself.",
+    "Allow yourself to take breaks and breathe.",
+    "Recognize the strength you have within yourself.",
+    "Love yourself unconditionally.",
+    "Be patient with yourself as you grow.",
+    "Trust yourself to create the life you envision.",
+    "Give yourself permission to be imperfect.",
+    "Embrace your uniqueness and what you bring to the world.",
+    "You are the author of your own story; believe in yourself.",
+    "Support yourself with positive affirmations.",
+    "Cherish the journey of becoming your best self.",
+    "Affirm your worth and your ability to succeed.",
+    "Be kind to yourself, and practice self-love daily.",
+    "You are a source of strength and resilience yourself.",
+    "Allow yourself to be proud of who you are.",
+    "Encourage yourself to keep striving for your dreams.",
+    "Recognize your achievements and celebrate yourself.",
+    "Trust yourself to navigate through life's ups and downs.",
+    "You are a wonderful person, and you deserve happiness yourself.",
+    "Affirm your ability to overcome any obstacle yourself.",
+    "Show yourself the same compassion you offer to others.",
+    "Be your own biggest cheerleader.",
+    "Believe in the potential you hold within yourself.",
+    "Embrace your journey with love and respect for yourself.",
+    "You are deserving of all the success and happiness yourself.",
+    "Trust in your ability to create positive change.",
+    "Celebrate yourself for every small step forward.",
+    "Encourage yourself to embrace new opportunities.",
+    "You are a valuable and important person yourself.",
+    "Affirm yourself with positivity and self-belief.",
+    "Allow yourself to be confident in your abilities.",
+    "Recognize your efforts and give yourself credit.",
+    "You are capable of achieving greatness yourself.",
+    "Trust yourself to make the right choices.",
+    "Be kind to yourself and honor your needs.",
+    "Believe in the power of your dreams and ambitions.",
+    "Affirm your strength and resilience every day.",
+    "Allow yourself to experience joy and fulfillment.",
+    "Embrace the person you are becoming yourself.",
+    "You are worthy of love, respect, and happiness yourself.",
+    "Celebrate your successes and acknowledge your progress.",
+    "Encourage yourself to keep reaching for your goals.",
+    "Recognize the importance of self-care and give it to yourself.",
+    "Trust in your unique abilities and strengths.",
+    "Be proud of yourself for who you are and who you are becoming.",
+    "Affirm yourself with love and positive self-talk.",
+    "You are a beacon of strength and positivity yourself.",
+    "Allow yourself to grow and evolve with grace.",
+    "Celebrate yourself for all the efforts you make.",
+    "Be your own source of motivation and inspiration.",
+    "Affirm your worthiness of success and happiness.",
+    "Trust yourself to navigate through any challenge.",
+    "Give yourself the love and care you need to thrive.",
+    "Embrace the journey and cherish every step forward.",
+    "You are a wonderful person with unique talents yourself.",
+    "Recognize your value and the positive impact you make.",
+    "Encourage yourself to be the best version of yourself.",
+    "Affirm your confidence and strength each day.",
+    "Believe in your ability to create a fulfilling life yourself."
+];
+
+    
+    
+    function getRandomPhrase4() {
+            const randomIndex = Math.floor(Math.random() * phrases4.length);
+            return phrases4[randomIndex];
+        }
+
+    function changeTextOnClick4() {
+            const clickableElement4 = document.getElementById('clickableText4');
+            clickableElement4.textContent = getRandomPhrase4();
+        }
+        document.getElementById('transformableText4').addEventListener('click', changeTextOnClick4);
+    
+    
+    function getRandomPhraselove() {
+            const randomlove = Math.floor(Math.random() * phrases3.length);
+            return phrases3[randomlove];
+        }
+
+    function changeTextOnClick3() {
+            const loveclickabletext = document.getElementById('loveclickable');
+            loveclickabletext.textContent = getRandomPhraselove();
+        }
+        document.getElementById('lovetransform').addEventListener('click', changeTextOnClick3);
+    
+    
+    function getRandomPhraseyou() {
+            const randomyou = Math.floor(Math.random() * phrases.length);
+            return phrases[randomyou];
+        }
+
+    function changeTextOnClick1() {
+            const youclickabletext = document.getElementById('youclickableText');
+            youclickabletext.textContent = getRandomPhraseyou();
+        }
+        document.getElementById('youtransform').addEventListener('click', changeTextOnClick1);
+    
+     function getRandomPhrasegotta() {
+            const randomgotta = Math.floor(Math.random() * phrases2.length);
+            return phrases2[randomgotta];
+        }
+
+    function changeTextOnClick2() {
+            const gottaclickabletext = document.getElementById('gottaclickableText');
+            gottaclickabletext.textContent = getRandomPhrasegotta();
+        }
+        document.getElementById('gottatransform').addEventListener('click', changeTextOnClick2);
+  </script>
+ 
+</html>
